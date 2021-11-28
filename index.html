@@ -24,24 +24,28 @@
     
                 <div class="col-dx relative">
     
-                    <div v-for="(image, i) in itemsArrey" class="object">
+                    <div v-for="(image, i) in itemsArrey" class="object" :class="i == courrentImg ? 'active-object' : '' " >
                         <img :src="image" :alt="titleArrey[i]">
                     </div>
     
-                    <div class="btn up">
+                    <div class="btn up" @click="decrement()">
                         <i class="fas fa-chevron-up"></i>
                     </div>
-                    <div class="btn down">
+                    <div class="btn down" @click="increment()" >
                         <i class="fas fa-chevron-down"></i>
                     </div>
     
                 </div>
     
                 <div class="circle-box">
-                    <div v-for="(image, i) in itemsArrey" class="circle"></div>
+                    <div v-for="(image, i) in itemsArrey" class="circle" :class="i == courrentImg ? 'active-circle' : '' "></div>
                 </div>
     
                 <div class="text">
+                    <div class="textInterno">          
+                        <h2>{{titleArrey[courrentImg]}}</h2>
+                        <span>{{textArrey[courrentImg]}}</span>
+                    </div>
                 </div>
     
             </div>
