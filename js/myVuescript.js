@@ -47,6 +47,9 @@ const app = new Vue({
                 this.courrentImg--;
             }
         },
+        selectObject: function(i){
+            this.courrentImg = i;
+        }
 
     }
 });

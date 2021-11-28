@@ -23,7 +23,7 @@
                 </div>
     
                 <div class="col-dx relative">
-                    <div class="object" v-for="(image, i) in itemsArrey" :class="i == courrentImg ? 'active-object' : '' " @click="courrentImg = i" >
+                    <div class="object" v-for="(image, i) in itemsArrey" :class="i == courrentImg ? 'active-object' : '' " @click="selectObject(i)" >
                         <img :src="image" :alt="titleArrey[i]">
                     </div>
 
