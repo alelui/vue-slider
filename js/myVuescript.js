@@ -32,11 +32,20 @@ const app = new Vue({
 
     methods:{
         increment: function(){
-            this.courrentImg++;
+            if (this.courrentImg == this.itemsArrey.length - 1){
+                this.courrentImg = 0;
+            }else{
+                this.courrentImg++;
+            }
+            
         },
 
         decrement: function(){
-            this.courrentImg--;
+            if (this.courrentImg == 0){
+                this.courrentImg = this.itemsArrey.length - 1;
+            }else{
+                this.courrentImg--;
+            }
         },
 
     }
