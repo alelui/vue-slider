@@ -43,6 +43,7 @@
     height: calc( 100% / 5);
     border: 1px solid black;
     opacity: 0.5;
+    cursor: pointer;
 }
 
 img{
@@ -97,10 +98,6 @@ transform: translateX(-50%);
     color: white;
     width: 40%;
 }
-/* .textInterno{
-    display: none;
-} */
-
 .text span{
     opacity: 0.7;
 }
@@ -111,8 +108,4 @@ transform: translateX(-50%);
 .active-object{
     opacity: 1;
     border: 1px solid white;
-}
-.active-circle{
-    opacity: 1;
-    background-color: white;  
 }
