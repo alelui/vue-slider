@@ -10,57 +10,48 @@
 </head>
 <body>
 
-    <div class="container">
+    <div id="root">
 
-        <div id="slider" class="relative">
+        <div class="container">
 
-            <div class="col-sx">          
+            <div id="slider" class="relative">
+    
+                <div class="col-sx">
+                    <div class="col-sx-img-box">          
+                        <img :src="itemsArrey[courrentImg]" :alt="titleArrey[courrentImg]">
+                    </div>   
+                </div>
+    
+                <div class="col-dx relative">
+    
+                    <div v-for="(image, i) in itemsArrey" class="object">
+                        <img :src="image" :alt="titleArrey[i]">
+                    </div>
+    
+                    <div class="btn up">
+                        <i class="fas fa-chevron-up"></i>
+                    </div>
+                    <div class="btn down">
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+    
+                </div>
+    
+                <div class="circle-box">
+                    <div v-for="(image, i) in itemsArrey" class="circle"></div>
+                </div>
+    
+                <div class="text">
+                </div>
+    
             </div>
-
-            <div class="col-dx relative">
-
-                <div class="object">
-                    <img src="img/01.jpg" alt="">
-                </div>
-                <div class="object">
-                    <img src="img/02.jpg" alt="">
-                </div>
-                <div class="object">
-                    <img src="img/03.jpg" alt="">
-                </div>
-                <div class="object">
-                    <img src="img/04.jpg" alt="">
-                </div>
-                <div class="object">
-                    <img src="img/05.jpg" alt="">
-                </div>
-
-                <div class="btn up">
-                    <i class="fas fa-chevron-up"></i>
-                </div>
-                <div class="btn down">
-                    <i class="fas fa-chevron-down"></i>
-                </div>
-
-            </div>
-
-            <div class="circle-box">
-                <div class="circle"></div>
-                <div class="circle"></div>
-                <div class="circle"></div>
-                <div class="circle"></div>
-                <div class="circle"></div>
-            </div>
-
-            <div class="text">
-            </div>
-
+    
         </div>
 
     </div>
     
     <!-- development version, includes helpful console warnings -->
     <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
-    <script src="js/myscript.js"></script>
+    <script src="js/myVuescript.js"></script>
 </body>
 </html>

@@ -80,52 +80,47 @@ const up = document.querySelector('.btn.up');
 //tramite la variabile "down", al click del plsante verra scatenata la funzione
 down.addEventListener("click", function(){
     
-    // if ( Active < item.length -1){ //se "Active" è minore della lungezza -1 dell'arrai di classi...
-        //seleziona la classe con l'active e la rimuove 
         item[Active].classList.remove('active');
         object[Active].classList.remove('active-object');
         text[Active].classList.remove('active');
         circle[Active].classList.remove('active-circle');
-        //Se Active è uguale alla lung array -1 asseganta ad Active il vaolre di 0, altrimenti intrementa Active
+        
         if (Active == item.length -1){
             Active = 0;
         }else{
             Active++;
         }
-        console.log(Active);
-        console.log(item.length - 1);
+        // console.log(Active);
+        // console.log(item.length - 1);
         
-        //con l'indice incrementa ora la classe selezionata è la seguente e si può così aggiungere nuovamente la classe active
         item[Active].classList.add('active');
         object[Active].classList.add('active-object');
         text[Active].classList.add('active');
         circle[Active].classList.add('active-circle');
-    // }
+
 });
 
 //tramite la variabile "up", al click del plsante verra scatenata la funzione
 up.addEventListener("click", function(){
-    //se "Active" è maggiore di 0...
-    // if ( Active > 0){
-        //seleziona la classe con l'active e la rimuove 
+
         item[Active].classList.remove('active');
         object[Active].classList.remove('active-object');
         text[Active].classList.remove('active');
         circle[Active].classList.remove('active-circle');
-        //decrementa la variabille favendo spostare l'indice di 1 unità e cosi facendo passa alla classe precedente
-        if (Active == 0){
+
+        if (Active === 0){
             Active = item.length - 1;
         }else{
             Active--;
-        // }
-        console.log(Active);
-        console.log(item.length - 1);
-        //con l'indice decrementato ora la classe selezionata è la precedente e si può così aggiungere nuovamente la classe active
+        }
+        // console.log(Active);
+        // console.log(item.length - 1);
+        
         item[Active].classList.add('active');
         object[Active].classList.add('active-object');
         text[Active].classList.add('active');
         circle[Active].classList.add('active-circle');
-    }
+    
 });
 
 

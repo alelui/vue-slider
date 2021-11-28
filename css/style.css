@@ -63,6 +63,7 @@ transform: translateX(-50%);
     display: inline-block;
     width: 10px;
     height: 10px;
+    margin: 0 3px;
     border-radius: 50%;
     background-color: white;
     opacity: 0.2;
