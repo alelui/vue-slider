@@ -18,13 +18,13 @@
     
                 <div class="col-sx">
                     <div class="col-sx-img-box">          
-                        <img :src="itemsArrey[courrentImg]" :alt="titleArrey[courrentImg]">
+                        <img :src="MegaArray[courrentImg].src" :alt="MegaArray[courrentImg].alt">
                     </div>   
                 </div>
     
                 <div class="col-dx relative">
-                    <div class="object" v-for="(image, i) in itemsArrey" :class="i == courrentImg ? 'active-object' : '' " @click="selectObject(i)" >
-                        <img :src="image" :alt="titleArrey[i]">
+                    <div class="object" v-for="(image, index) in MegaArray" :class="index == courrentImg ? 'active-object' : '' " @click="selectObject(index)" >
+                        <img :src="image.src" :alt="image.alt">
                     </div>
 
                     <div class="btn up" @click="decrement()">
@@ -36,12 +36,12 @@
                 </div>
     
                 <div class="circle-box">
-                    <div class="circle" v-for="(image, i) in itemsArrey" :class="i == courrentImg ? 'active-object' : '' "></div>
+                    <div class="circle" v-for="(image, index) in MegaArray" :class="index == courrentImg ? 'active-object' : '' "></div>
                 </div>
     
                 <div class="text">   
-                    <h2>{{titleArrey[courrentImg]}}</h2>
-                    <span>{{textArrey[courrentImg]}}</span>
+                    <h2>{{MegaArray[courrentImg].h2}}</h2>
+                    <span>{{MegaArray[courrentImg].span}}</span>
                 </div>
     
             </div>

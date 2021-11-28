@@ -27,6 +27,39 @@ const app = new Vue({
             'Et temporibus voluptatum suscipit tempore aliquid deleniti aut veniam inventore eligendi ex ad ullam,',
         ],
 
+        MegaArray: [
+            {   
+                "h2":'Sasso Marconi',
+                "span":'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et temporibus voluptatum suscipit tempore aliquid deleniti aut veniam inventore eligendi ex ad ullam, cumque provident totam omnis, magnam dolores dolorum corporis.',
+                "src":" img/01.jpg",
+                "alt":'Sasso Marconi'
+               },
+               {   
+                "h2":'Rocca Rasu',
+                "span":'Lorem ipsum',
+                "src":" img/02.jpg",
+                "alt":'Rocca Rasu'
+               },
+               {   
+                "h2":'Formello',
+                "span":'Lorem ipsum, dolor sit amet consectetur adipisicing elit',
+                "src":" img/03.jpg",
+                "alt":'Formello'
+               },
+               {   
+                "h2":'Bassano del Grappa',
+                "span":'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et temporibus voluptatum suscipit tempore aliquid deleniti aut veniam inventore eligendi ex ad ullam,',
+                "src":" img/04.jpg",
+                "alt":'Bassano del Grappa'
+               },
+               {   
+                'h2':'Pianarella di Cervia',
+                'span':'Et temporibus voluptatum suscipit tempore aliquid deleniti aut veniam inventore eligendi ex ad ullam,',
+                'src':" img/05.jpg",
+                "alt":'Pianarella di Cervia'
+               }
+        ],
+
         courrentImg: 0
     },
 
@@ -55,36 +88,9 @@ const app = new Vue({
 });
 
 
-// {   
-//     "place":'Svezia',
-//     "quote":'Vieni a goderti quel po\' di tempo libero che ti rimane in un paradiso ',
-//     "src":" img/01.jpg",
-//     "alt":'a nice place'
-// }
-// {   
-//     "place":'Svizzera',
-//     "quote":'Vieni a goderti quel po\' di tempo libero che ti rimane in un paradiso ',
-//     "src":" img/02.jpg",
-//     "alt":'Victorinox'
-// },
-// {   
-//     "place":'Gran Bretagna',
-//     "quote":'Vieni a goderti quel po\' di tempo libero che ti rimane in un paradiso ',
-//     "src":" img/03.jpg",
-//     "alt":'Robin Hood'
-// },
-// {   
-//     "place":'Germania',
-//     "quote":'Vieni a goderti quel po\' di tempo libero che ti rimane in un paradiso ',
-//     "src":" img/04.jpg",
-//     "alt":'Wrustel'
-// },
-// {   
-//     'place':'Paradise',
-//     'quote':'Vieni a goderti quel po\' di tempo libero che ti rimane in un paradiso ',
-//     'src':" img/05.jpg",
-//     "alt":'a nice place'
-// },
+
+
+
 
 
 
