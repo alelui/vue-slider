@@ -23,7 +23,7 @@
                 </div>
     
                 <div class="col-dx relative">
-                    <div class="object" v-for="(image, index) in MegaArray" :class="index == courrentImg ? 'active-object' : '' " @click="selectObject(index)" >
+                    <div class="object" v-for="(image, index) in MegaArray" :class="index == courrentImg ? 'active-object' : ''" @click="selectObject(index)" >
                         <img :src="image.src" :alt="image.alt">
                     </div>
 
@@ -36,7 +36,7 @@
                 </div>
     
                 <div class="circle-box">
-                    <div class="circle" v-for="(image, index) in MegaArray" :class="index == courrentImg ? 'active-object' : '' "></div>
+                    <div class="circle" v-for="(image, index) in MegaArray" :class="index == courrentImg ? 'active-object' : ''" @click="selectObject(index)"></div>
                 </div>
     
                 <div class="text">   

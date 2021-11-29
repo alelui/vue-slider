@@ -67,6 +67,7 @@ transform: translateX(-50%);
     border-radius: 50%;
     background-color: white;
     opacity: 0.4;
+    cursor: pointer;
 }
 
 .btn{
