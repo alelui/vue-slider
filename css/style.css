@@ -42,8 +42,11 @@
     width: 100%;
     height: calc( 100% / 5);
     border: 1px solid black;
-    opacity: 0.5;
+    opacity: 0.3;
     cursor: pointer;
+}
+.object:hover{
+    opacity: 0.6;
 }
 
 img{
